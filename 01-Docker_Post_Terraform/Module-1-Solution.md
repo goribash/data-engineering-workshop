@@ -5,7 +5,8 @@
 Version of Pip in the image is 25.3
 
 ###Question 2 
-
+Hostname & port
+db:5432
 
 ###Question 3
 
