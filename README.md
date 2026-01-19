@@ -1,2 +1,2 @@
-# data-engineering-workshop-
+# data-engineering-workshop
 Workshop Codespaces
