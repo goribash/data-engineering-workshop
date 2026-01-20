@@ -64,6 +64,9 @@ docker exec -it pgdatabase psql -U root -d green_ny_taxi
 ```
 
 *[Ingest_ file](docker/ingest.py)
+
+
+
 *[Docker_Compose_File](docker/docker-compose.yaml)
 
 
