@@ -5,13 +5,15 @@
 Run docker with the python:3.13 image. Use an entrypoint bash to interact with the container.
 What's the version of pip in the image?
 
+```bash
 docker run -it --entrypoint bash python:3.13
 pip --version
-
----
+```
 **Answer:** 
 `pip` version → **25.3**
 
+
+---
 ### Question 2. Understanding Docker networking and docker-compose
 Given the following docker-compose.yaml, what is the hostname and port that pgadmin should use to connect to the postgres database?
 
@@ -45,11 +47,11 @@ volumes:
     name: vol-pgdata
   vol-pgadmin_data:
     name: vol-pgadmin_data
-
+```
 **Answer:**  
-`db:5432`
+db:5432
 
----
+----
 
 ### Question 3. Counting short trips
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a trip_distance of less than or equal to 1 mile?
@@ -61,6 +63,7 @@ WHERE lpep_pickup_datetime >= '2025-11-01'
   AND lpep_pickup_datetime <  '2025-12-01'
   AND trip_distance IS NOT NULL
   AND trip_distance <= 1;
+```
 
 **Answer:**  
 **8,007 trips**
@@ -88,6 +91,7 @@ SELECT
 FROM daily_max
 ORDER BY max_trip_distance DESC
 LIMIT 1;
+```
 
 **Answer:**  
 **2025-11-14**
@@ -109,11 +113,12 @@ WHERE t.lpep_pickup_datetime >= '2025-11-18'
 GROUP BY 1
 ORDER BY total_revenue DESC
 LIMIT 1;
-
+```
 **Answer:**  
 **East Harlem North**
 
 ---
+
 ### Question 6. Largest tip
 For the passengers picked up in the zone named "East Harlem North" in November 2025, which was the drop off zone that had the largest tip?
 
@@ -131,6 +136,7 @@ WHERE pz."Zone" = 'East Harlem North'
 GROUP BY dz."Zone"
 ORDER BY largest_tip DESC
 LIMIT 1;
+```
 
 **Answer:**  
 **Yorkville West**
