@@ -52,6 +52,20 @@ volumes:
 db:5432
 
 ----
+## Prepare the Data 
+### Build and start services 
+```bash
+ docker compose up
+```
+
+### Connect to the database
+```bash
+docker exec -it pgdatabase psql -U root -d green_ny_taxi
+```
+
+*[Ingest_ file](01-docker-postgresql-terraform/docker/ingest.py)
+*[Docker_Compose_File](01-docker-postgresql-terraform/docker/docker-compose.yaml)
+
 
 ### Question 3. Counting short trips
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a trip_distance of less than or equal to 1 mile?

@@ -212,6 +212,9 @@ __marimo__/
 random.md
 keys/
 my-creds.json
+pipeline.py
+ingest_data.py
+
 
 
 # Local .terraform directories
