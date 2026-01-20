@@ -63,8 +63,8 @@ db:5432
 docker exec -it pgdatabase psql -U root -d green_ny_taxi
 ```
 
-*[Ingest_ file](01-docker-postgresql-terraform/docker/ingest.py)
-*[Docker_Compose_File](01-docker-postgresql-terraform/docker/docker-compose.yaml)
+*[Ingest_ file](docker/ingest.py)
+*[Docker_Compose_File](docker/docker-compose.yaml)
 
 
 ### Question 3. Counting short trips
