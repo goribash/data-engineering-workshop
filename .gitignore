@@ -214,7 +214,7 @@ keys/
 my-creds.json
 pipeline.py
 ingest_data.py
-
+ingest.txt
 
 
 # Local .terraform directories
